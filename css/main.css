@@ -92,7 +92,8 @@ img{
     padding-top:70px;
     padding-bottom:70px;
     display: flex;
-    background-color: #eef0d1;
+    /*background-color: #eef0d1;*/
+    background-color: white;
     flex-direction: column;
 }
 
