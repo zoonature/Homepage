@@ -1,3 +1,6 @@
+
+/* page 1 */
+
 .home {
     margin-left:0px;
     margin-right:0px;
@@ -7,7 +10,7 @@
     background-color: #D1EAF0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .home {
       flex-direction: column;
     }
@@ -17,8 +20,6 @@
 .profile_text{
     flex:1;
     text-align: left;
-    margin-right: 15px;
-    margin-left: 15px;
 }
 
 .profile_image{
@@ -32,11 +33,24 @@ h3{
     margin-left:100px;
     margin-right:15px;
 }
+@media (max-width: 1000px) {
+    h3 {
+        margin-left:10px;
+        margin-right:10px;
+    }
+  }
 
 h1{
     margin-left:100px;
     margin-right:15px;
 }
+
+@media (max-width: 1000px) {
+    h1 {
+        margin-left:10px;
+        margin-right:10px;
+    }
+  }
 
 
 img{
@@ -45,12 +59,11 @@ img{
     align-items: center;
     margin-left:100px;
     margin-right: 100px;
-    border-radius: 20%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     img {
-        display: inline-block;
+        align-items: center;
     }
   }
 
@@ -61,6 +74,15 @@ img{
     margin-left:100px;
     margin-right:100px;
 }
+
+@media (max-width: 1000px) {
+    #p_profile {
+        margin-left:10px;
+        margin-right:10px;
+    }
+  }
+
+/* page2 */
 
 .about{
     margin-left:0px;
@@ -75,9 +97,17 @@ img{
 h6{
     margin-top: 30px;
     margin-left:100px;
+    margin-right:100px;
     margin-bottom: 10px;
     font-size:25px;
 }
+
+@media (max-width: 1000px) {
+    h6 {
+        margin-left:10px;
+        margin-right:10px;
+    }
+  }
 
 #p_about{
     
@@ -88,3 +118,9 @@ h6{
     margin-bottom:1px;
 }
 
+@media (max-width: 1000px) {
+    #p_about {
+        margin-left:20px;
+        margin-right:20px;
+    }
+  }
