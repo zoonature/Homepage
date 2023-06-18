@@ -10,6 +10,7 @@
     background-image: url("../img/background.png");
     background-size: cover;
     background-position: center;
+    position:relative;
 }
 
 @media (max-width: 1000px) {
@@ -20,7 +21,7 @@
 
 
 .profile_text{
-    flex:1;
+    flex:3;
     text-align: left;
 }
 
@@ -35,6 +36,7 @@ h3{
     margin-left:100px;
     margin-right:15px;
 }
+
 @media (max-width: 1000px) {
     h3 {
         margin-left:10px;
@@ -44,11 +46,15 @@ h3{
 
 h1{
     margin-left:100px;
-    margin-right:15px;
+    margin-right:0px;
+    margin-bottom: 0px;
+    font-size:80px;
+    font-family: "Luckiest Guy";
 }
 
 @media (max-width: 1000px) {
     h1 {
+        font-size:30px;
         margin-left:10px;
         margin-right:10px;
     }
@@ -58,14 +64,19 @@ h1{
 img{
     height:300px;
     float:right;
-    align-items: center;
-    margin-left:100px;
+    margin-left:0px;
     margin-right: 100px;
+    position: absolute;
+    bottom:100px;
+
 }
 
 @media (max-width: 1000px) {
     img {
+        float:center;
+        bottom:auto;
         align-items: center;
+        position:relative;
     }
   }
 
