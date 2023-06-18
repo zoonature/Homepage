@@ -1,57 +1,31 @@
-.menu * {
-    display: inline;
-}
-
-.menu {
-    font-size: 20px;
-    font-style: italic;
-    align-items: center;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-} 
-
-.menu ul {
-    padding-left: 0px;
-}
-
-.menu li {
-    margin: 35px;
-}
-
-.menu li a {
-    color: black;
-    text-decoration: none;
-}
-
 
 /* page 1 */
 
 .home {
     margin-left:0px;
     margin-right:0px;
-    padding-top: 180px;
-    padding-bottom: 130px;
-    height:300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     background-color: #D1EAF0;
 }
+
+@media (max-width: 800px) {
+    .home {
+      flex-direction: column;
+    }
+  }
 
 
 .profile_text{
     flex:1;
     text-align: left;
     margin-right: 15px;
+    margin-left: 15px;
 }
 
 .profile_image{
     flex:1;
-    margin-left:15px;
 }
 
 h3{
@@ -59,24 +33,36 @@ h3{
     font-weight: normal;
     line-height: 0;
     margin-left:100px;
+    margin-right:15px;
 }
 
 h1{
     margin-left:100px;
+    margin-right:15px;
 }
 
 
 img{
     height:300px;
     float:right;
+    align-items: center;
+    margin-left:100px;
     margin-right: 100px;
     border-radius: 20%;
 }
+
+@media (max-width: 800px) {
+    img {
+        display: inline-block;
+    }
+  }
+
 
 #p_profile{
     font-size:20px;
     color: #707070;
     margin-left:100px;
+    margin-right:100px;
 }
 
 /* page2 */
@@ -92,39 +78,18 @@ img{
 }
 
 h6{
-    margin-top: 0px;
+    margin-top: 30px;
     margin-left:100px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-size:25px;
 }
 
 #p_about{
+    
     font-size:15px;
     color: black;
-    margin-left:100px;
+    margin-left:120px;
     margin-right:100px;
+    margin-bottom:1px;
 }
 
-
-/* page3 */
-
-.research{
-    margin-left:0px;
-    margin-right:0px;
-    height:510px;
-    display: flex;
-    background-color: #d5f0d1;
-    
-}
-
-/* page4 */
-
-.contact{
-    margin-left:0px;
-    margin-right:0px;
-    padding-top: 180px;
-    padding-bottom: 130px;
-    height:510px;
-    display: flex;
-    background-color: #f0e3d1;
-}
