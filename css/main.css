@@ -13,12 +13,19 @@
   background-color: #555;
 }
 
+
+
+
+
 /*Header*/
 
+
 .header {
-  background-color: rgba(255,255,255,0);
+  background-color:  rgba(255,255,255,0);
   padding: 30px;
   text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu ul {
@@ -35,13 +42,67 @@
 
 .menu li a {
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   color: #333;
 }
 
 .menu li a:hover {
   font-weight: bold;
 }
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 15px; /* 원하는 너비로 조정 */
+  height: auto; /* 너비에 맞춰 자동으로 높이 조정 */
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .menu-toggle.active .menu-icon:nth-child(1) {
+    transform: rotate(45deg) translateX(5px);
+  }
+
+  .menu-toggle.active .menu-icon:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .menu-icon:nth-child(3) {
+    transform: rotate(-45deg) translateX(5px);
+  }
+
+  .menu-toggle.active + .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
 
 
 /*Home*/
@@ -183,5 +244,38 @@ h6{
         margin-right:20px;
     }
   }
+
+
+/*project*/
+
+
+/*contact*/
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box1 {
+  width: 80%;
+  height: 150px;
+  background-color: #ffe2eb;
+  padding: 20px;
+  border-radius: 10px;
+}
+.box2{
+  width: 80%;
+  height: 150px;
+  background-color: #fff2f1;
+  padding: 20px;
+  margin-top:10px;
+  border-radius: 10px;
+}
+.box p {
+  margin: 0;
+}
+
+
+
 
 
