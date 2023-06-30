@@ -135,20 +135,7 @@
     flex:1;
 }
 
-h3{
-    font-size:30px;
-    font-weight: normal;
-    line-height: 0;
-    margin-left:100px;
-    margin-right:15px;
-}
 
-@media (max-width: 1000px) {
-    h3 {
-        margin-left:10px;
-        margin-right:10px;
-    }
-  }
 
 h1{
     margin-left:100px;
@@ -167,7 +154,7 @@ h1{
   }
 
 
-img{
+#profile_image{
     height:300px;
     float:right;
     margin-left:0px;
@@ -178,7 +165,7 @@ img{
 }
 
 @media (max-width: 1000px) {
-    img {
+  #profile_image {
         float:center;
         bottom:auto;
         align-items: center;
@@ -214,7 +201,7 @@ img{
     flex-direction: column;
 }
 
-h6{
+h2{
     margin-top: 30px;
     margin-left:100px;
     margin-right:100px;
@@ -223,7 +210,7 @@ h6{
 }
 
 @media (max-width: 1000px) {
-    h6 {
+    h2 {
         margin-left:10px;
         margin-right:10px;
     }
@@ -231,7 +218,7 @@ h6{
 
 #p_about{
     
-    font-size:15px;
+    font-size:18px;
     color: black;
     margin-left:120px;
     margin-right:100px;
@@ -249,33 +236,45 @@ h6{
 /*project*/
 
 
-/*contact*/
-.project {
+
+.project{
+  margin-left:0px;
+  margin-right:0px;
+  padding-top:10px;
+  padding-bottom:70px;
   display: flex;
+  /*background-color: #eef0d1;*/
+  background-color: white;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.box1 {
-  width: 80%;
-  height: 150px;
-  background-color: #ffe2eb;
-  padding: 20px;
-  border-radius: 10px;
-}
-.box2{
-  width: 80%;
-  height: 150px;
-  background-color: #fff2f1;
-  padding: 20px;
-  margin-top:10px;
-  border-radius: 10px;
-}
-.box p {
-  margin: 0;
 }
 
 
+#p_project{
+    
+  font-size:20px;
+  color: black;
+  margin-left:120px;
+  margin-right:120px;
+  margin-bottom:1px;
+}
+
+@media (max-width: 1000px) {
+  #p_project {
+      margin-left:20px;
+      margin-right:20px;
+  }
+}
 
 
-
+#result_image{
+  margin-left:120px;
+  margin-right:120px;
+  max-width: 100%; /* 이미지가 컨테이너의 너비를 초과하지 않도록 설정 */
+  max-height: 100%; /* 이미지가 컨테이너의 높이를 초과하지 않도록 설정 */
+}
+@media (max-width: 1000px) {
+  #result_image {
+      margin-left:20px;
+      margin-right:20px;
+  }
+}
